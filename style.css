@@ -1,0 +1,22 @@
+div#editor{
+	position: relative;
+	width: 75%;
+	height: 300px;
+	border: 1px solid black;	
+	overflow: auto;
+}
+
+.tool{
+	z-index: 100;
+	position: fixed;
+	transition: all 1s;
+}
+
+.done{
+	margin-left: 5%;
+}
+
+a{
+	margin-left: 5px;
+	margin-right: 5px;
+}

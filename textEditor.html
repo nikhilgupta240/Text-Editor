@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My text Editor</title>
+
+	<!-- jquery and bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- personal files -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="brain.js"></script>
+</head>
+<body onload="init()">
+	<h1>Text editor</h1>
+	<div id="tool" class="tool btn-group">
+		<button class="btn btn-primary" onclick="bold();">B</button>
+		<button class="btn btn-primary" onclick="underline();">U</button>
+		<button class="btn btn-primary" onclick="changeColor();">C</button>
+	</div>
+	<div class="container" id="post">
+		<div id="editor" contenteditable="true" onKeypress="newPara(event);"></div>
+	</div>
+	<button class="btn btn-success done" onclick="checkLink();">Done</button>
+</body>
+</html>
